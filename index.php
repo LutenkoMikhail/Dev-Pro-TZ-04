@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 $initialValuesArrayOne = [0, -1, -2, 3, 4, -5, 6, -7, 88, 9, -10];
-$initialValuesArrayTwo = [0, 1, -2, 3, 4, -5, 6, -7, 77, 9, -10];
+$initialValuesArrayTwo = [0, 1, -2, 3, 4, -5, 6, -7, 77, 9];
 $resultArray = [];
 $countNumbersArray = 0;
 $iterator = 0;
@@ -33,7 +33,7 @@ function arrayIntersect(array $arrayOne, array $arrayTwo): array
     $countArrayOne = count($arrayOne);
     $countArrayTwo = count($arrayTwo);
 
-    if ($countArrayOne !== 0 || $countArrayTwo !== 0) {
+    if ($countArrayOne !== 0 && $countArrayTwo !== 0) {
         while ($iteratorOne < $countArrayOne) {
             $readNumberOne = $arrayOne[$iteratorOne];
             $iteratorTwo = 0;
